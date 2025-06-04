@@ -1,0 +1,29 @@
+.website-gallery {
+  text-align: center;
+  padding: 2rem;
+
+  .gallery-container {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .gallery-card {
+    flex: 0 0 auto;
+    width: 300px;
+    cursor: default;
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
